@@ -127,14 +127,14 @@ const Portfolio = () => (
         category="Fintech SaaS"
         title="ChainSignal"
         description="A sophisticated platform for real-time financial signals and data visualization, focusing on precision and high-performance trading insights. Built for high-stakes decisions."
-        imageUrl="/chainsignal.webp"
+        imageUrl="chainsignal.webp"
         demoUrl="https://chainsignal.vercel.app/"
       />
       <PortfolioItem 
         category="Luxury E-commerce"
         title="Velum"
         description="High-end digital storefront focusing on sensory experience and minimalist aesthetics for premium retail. Optimized for conversion and brand storytelling."
-        imageUrl="/velum.webp"
+        imageUrl="velum.webp"
         demoUrl="https://velum-luxury-ecom.vercel.app/"
         reverse
       />
@@ -142,14 +142,14 @@ const Portfolio = () => (
         category="Premium E-commerce"
         title="Sole Syndicate"
         description="A performance-driven sneaker marketplace. Integrated real-time stock tracking, secure payment gateways, and a seamless mobile-first checkout experience."
-        imageUrl="/sole_syndicate.webp"
+        imageUrl="sole_syndicate.webp"
         demoUrl="https://sole-syndicate-lac.vercel.app/"
       />
       <PortfolioItem 
         category="Full-Scale SaaS"
         title="Automate Leads"
         description="From raw data to booked meetings — one automated system with verified leads and AI receptionists. Stop chasing leads. Let the system work for you."
-        imageUrl="/automate_leads.webp"
+        imageUrl="automate_leads.webp"
         demoUrl="https://all-in-one-saas-webapp.vercel.app/"
         reverse
       />
@@ -230,7 +230,7 @@ const About = () => (
         <div className="relative aspect-square w-full max-w-md overflow-hidden rounded-2xl grayscale transition-all duration-500 hover:grayscale-0 shadow-sm border border-black/5 bg-black/5 p-4">
           <div className="absolute inset-0 z-10 bg-primary/10 mix-blend-multiply transition-opacity duration-500 hover:opacity-0"></div>
           <img 
-            src="/original_dev_image.png"
+            src="original_dev_image.png"
             alt="Purushottam Kumar"
             loading="lazy"
             referrerPolicy="no-referrer"
@@ -585,7 +585,7 @@ export default function App() {
   };
 
   return (
-    <div className="relative flex min-h-screen flex-col before:pointer-events-none before:fixed before:inset-0 before:z-0 before:opacity-[0.3] before:bg-[url('/background.webp')] before:bg-repeat before:bg-[length:350px]">
+    <div className="relative flex min-h-screen flex-col before:pointer-events-none before:fixed before:inset-0 before:z-0 before:opacity-[0.6] before:bg-[url('background.webp')] before:bg-repeat before:bg-[length:350px]">
       <CustomCursor />
       <Header />
       <main className="relative z-10 flex-grow pt-24">
