@@ -3,6 +3,15 @@ import { Terminal, ArrowRight, ExternalLink, Layers, Bot, Globe, ShoppingBag, La
 import { motion, AnimatePresence } from 'motion/react';
 import CustomCursor from './components/CustomCursor';
 
+import chainSignalImg from './assets/chainsignal.webp';
+import velumImg from './assets/velum.webp';
+import soleSyndicateImg from './assets/sole_syndicate.webp';
+import automateLeadsImg from './assets/automate_leads.webp';
+import originalDevImg from './assets/original_dev_image.png';
+import heroBgImg from './assets/hero-bg.jpg';
+import atelierCafeImg from './assets/atelier-cafe.jpg';
+import urbanbiteImg from './assets/urbanbite.jpg';
+
 // Components
 const Header = () => (
   <header className="fixed top-0 z-50 w-full border-b border-black/5 bg-background-light/90 backdrop-blur-md">
@@ -32,7 +41,7 @@ const Hero = () => (
   <section className="relative flex min-h-[85vh] items-center justify-center overflow-hidden px-6 py-20 md:px-12">
     <div className="absolute inset-0 z-0 opacity-[0.07] pointer-events-none">
       <img 
-        src="https://images.unsplash.com/photo-1507646871303-331b8f66c135?q=80&w=3000&auto=format&fit=crop" 
+        src={heroBgImg} 
         alt="Botanical overlay" 
         className="w-full h-full object-cover blur-[2px]"
         referrerPolicy="no-referrer"
@@ -127,14 +136,14 @@ const Portfolio = () => (
         category="Fintech SaaS"
         title="ChainSignal"
         description="A sophisticated platform for real-time financial signals and data visualization, focusing on precision and high-performance trading insights. Built for high-stakes decisions."
-        imageUrl="/chainsignal.webp"
+        imageUrl={chainSignalImg}
         demoUrl="https://chainsignal.vercel.app/"
       />
       <PortfolioItem 
         category="Luxury E-commerce"
         title="Velum"
         description="High-end digital storefront focusing on sensory experience and minimalist aesthetics for premium retail. Optimized for conversion and brand storytelling."
-        imageUrl="/velum.webp"
+        imageUrl={velumImg}
         demoUrl="https://velum-luxury-ecom.vercel.app/"
         reverse
       />
@@ -142,14 +151,14 @@ const Portfolio = () => (
         category="Premium E-commerce"
         title="Sole Syndicate"
         description="A performance-driven sneaker marketplace. Integrated real-time stock tracking, secure payment gateways, and a seamless mobile-first checkout experience."
-        imageUrl="/sole_syndicate.webp"
+        imageUrl={soleSyndicateImg}
         demoUrl="https://sole-syndicate-lac.vercel.app/"
       />
       <PortfolioItem 
         category="Full-Scale SaaS"
         title="Automate Leads"
         description="From raw data to booked meetings — one automated system with verified leads and AI receptionists. Stop chasing leads. Let the system work for you."
-        imageUrl="/automate_leads.webp"
+        imageUrl={automateLeadsImg}
         demoUrl="https://all-in-one-saas-webapp.vercel.app/"
         reverse
       />
@@ -157,14 +166,14 @@ const Portfolio = () => (
         category="Hospitality & Lifestyle"
         title="The Atelier Cafe"
         description="A refined digital experience for a boutique cafe, blending artisanal aesthetics with seamless reservation and menu exploration. Designed for premium brand positioning."
-        imageUrl="https://images.unsplash.com/photo-1554118811-1e0d58224f24?q=80&w=2000&auto=format&fit=crop"
+        imageUrl={atelierCafeImg}
         demoUrl="https://the-atelier-cafe.vercel.app/"
       />
       <PortfolioItem 
         category="Food & Beverage"
         title="UrbanBite"
         description="A vibrant digital storefront for a modern fast-food cafe in Patna, featuring a mouth-watering menu display and instant WhatsApp ordering integration for a seamless customer experience."
-        imageUrl="https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?q=80&w=2000&auto=format&fit=crop"
+        imageUrl={urbanbiteImg}
         demoUrl="https://urbanbite-bice.vercel.app/"
         reverse
       />
@@ -230,7 +239,7 @@ const About = () => (
         <div className="relative aspect-square w-full max-w-md overflow-hidden rounded-2xl grayscale transition-all duration-500 hover:grayscale-0 shadow-sm border border-black/5 bg-black/5 p-4">
           <div className="absolute inset-0 z-10 bg-primary/10 mix-blend-multiply transition-opacity duration-500 hover:opacity-0"></div>
           <img 
-            src="/original_dev_image.png"
+            src={originalDevImg}
             alt="Purushottam Kumar"
             loading="lazy"
             referrerPolicy="no-referrer"
@@ -585,7 +594,7 @@ export default function App() {
   };
 
   return (
-    <div className="relative flex min-h-screen flex-col before:pointer-events-none before:fixed before:inset-0 before:z-0 before:opacity-[0.6] before:bg-[url('/background.webp')] before:bg-repeat before:bg-[length:350px]">
+    <div className="bg-pattern relative flex min-h-screen flex-col before:pointer-events-none before:fixed before:inset-0 before:z-0 before:opacity-[0.6] before:bg-repeat before:bg-[length:350px]">
       <CustomCursor />
       <Header />
       <main className="relative z-10 flex-grow pt-24">

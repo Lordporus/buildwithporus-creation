@@ -22,7 +22,7 @@
     font-family: 'Inter', sans-serif;
     scroll-behavior: smooth;
     @apply bg-background-light text-text-primary antialiased selection:bg-primary/20 selection:text-primary;
-    background-image: url('https://www.transparenttextures.com/patterns/floral-pattern.png');
+    background-image: url('./assets/floral-pattern.png');
     background-repeat: repeat;
     background-size: 350px;
     background-blend-mode: multiply;
@@ -45,6 +45,10 @@
 }
 
 @layer components {
+  .bg-pattern::before {
+    background-image: url('./assets/background.webp');
+  }
+
   .glass-card {
     background: rgba(255, 255, 255, 0.6);
     backdrop-filter: blur(8px);
